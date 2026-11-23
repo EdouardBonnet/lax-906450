@@ -1,0 +1,3 @@
+Given a finite simple graph $G$, one polynomial-time word-RAM algorithm partitions its vertices into $V_0$, $V_{1/2}$, and $V_1$. Every neighbor of $V_0$ lies in $V_1$. Every vertex cover of $G[V_{1/2}]$ has size at least $|V_{1/2}|/2$. Every minimum vertex cover of $G$ contains $V_1$ and avoids $V_0$.
+
+Chlebík and Chlebíková strengthened the Nemhauser–Trotter theorem to obtain the guarantee for every minimum vertex cover. The algorithm maximizes $|A|-|B|$ subject to $N(A)\subseteq B$, breaking ties by minimizing $|A|$. A single rational linear program finds such a pair. The RAM reads the adjacency matrix and writes one label per vertex.
